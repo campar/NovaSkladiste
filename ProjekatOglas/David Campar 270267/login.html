@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Projekat1</title>
+	<link rel="stylesheet" type="text/css" href="styles/globalni.css" />
+
+	<style type="text/css">
+		.sadrzaj{
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<header id="zaglavlje">
+			<div class="logo"><a href="index.html">Projekat<span>Prvi</span></a></div>
+			<a href="korisnickiProfil.html" class="korisnickiProfil">KorisnickiProfil</a>
+	</header>
+		<sidebar id="bocniMeni">
+			<nav id=navigacija>
+				<form>
+					<div class="slikaLupa"></div>
+						<div><input type="text" name="search"  placeholder="Pretraga" class="lupaTraganja"></div>
+						<button  class="dugmeKreiranja" formaction="kreirajOglas.html">Kreiraj svoj oglas</button>
+					<div class="slikaKreiraj"></div>
+				</form>
+				<section id="navigacijaOkviri">
+					<ul class="harmonika1">	
+						<div class="harmonika1Dirke"><li><a href="index.html">Početna</a></li></div><hr/>
+						<div class="harmonika1Dirke"><li><a href="#">Kategorije</a><div class="navigacijaStrelice"></div>
+							<ul class="harmonika2">
+								<div class="harmonika2Dirke"><hr/><li><a href="garderoba.html">Garderoba</a>
+									<div class="Harmonika2Slike" style="background-image: url(images/patike.png); top:0px;"></div></li><hr/></div><hr/>
+								<div class="harmonika2Dirke"><li><a href="mobilni-telefoni.html">Mobilni telefoni</a>
+									<div class="harmonika2Slike" style="background-image: url(images/mobilni.png);top: 0px;"></div></li></div><hr/>
+								<div class="harmonika2Dirke"><li><a href="automobili.html">Automobili</a>
+									<div class="harmonika2Slike" style="background-image: url(images/auto.png);"></div></li></div><hr/>
+								<div class="harmonika2Dirke"><li><a href="nakit.html">Nakit</a>
+									<div class="harmonika2Slike" style="background-image: url(images/dijamant.png); top:-10px; height: 60px;"></div></li></div>
+							</ul>
+						</li>
+						</div><hr/>
+						<div class="harmonika1Dirke"><li><a href="login.html"><p>LogIn</p></a></li></div><hr/>
+				</section>
+			</nav>
+		</sidebar>
+		<main class="sadrzaj" style="background-image:url(images/repeatSlika.png);">
+			<img src="images/login-covek-unhover.png" class="covek">
+				<form>
+					<div id="login-blok">
+						<div class="usernameBLok">
+							<div class="slikaUsername"></div>
+							<input type="text" name="username" class="velicina-UsernamePassword" placeholder="Username" required="required">
+						</div>
+					<div class="praznina"></div>
+						<div class="passwordBlok">
+							<div class="slikaPassword"></div>
+							<input type="password" name="password" class="velicina-UsernamePassword" placeholder="Password" required="required">
+						</div>	
+					<div class="praznina"></div>
+						<div>
+						<input type="submit" name="submit" class ="submitDugme" value="LOG IN";>
+					<div class="praznina"></div>
+						</div>
+							<div class="linkovi">
+								<a href="#a">Zaboravljen nalog?</a> 	<span><a href="#a">Registracija</a></span>
+							</div>
+					</div>
+			</form>
+		</main>
+</body>
+</html>

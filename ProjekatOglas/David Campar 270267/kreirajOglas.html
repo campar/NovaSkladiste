@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Projekat1</title>
+	<link rel="stylesheet" type="text/css" href="styles/globalni.css" />
+</head>
+<body>
+	<header id="zaglavlje">
+		<div class="logo"><a href="index.html">Projekat<span>Prvi</span></a></div>
+	</header>
+		<sidebar id="bocniMeni">
+			<nav id=navigacija>
+				<form>
+					<div class="slikaLupa"></div>
+						<div><input type="text" name="search"  placeholder="Pretraga" class="lupaTraganja"></div>
+						<button  class="dugmeKreiranja" formaction="kreirajOglas.html">Kreiraj svoj oglas</button>
+					<div class="slikaKreiraj"></div>
+				</form>
+				<section id="navigacijaOkviri">
+					<ul class="harmonika1">	
+						<div class="harmonika1Dirke"><li><a href="index.html">Početna</a></li></div><hr/>
+						<div class="harmonika1Dirke"><li><a href="#">Kategorije</a><div class="navigacijaStrelice"></div>
+							<ul class="harmonika2">
+								<div class="harmonika2Dirke"><hr/><li><a href="garderoba.html">Garderoba</a>
+									<div class="Harmonika2Slike" style="background-image: url(images/patike.png); top:0px;"></div></li><hr/></div><hr/>
+								<div class="harmonika2Dirke"><li><a href="mobilni-telefoni.html">Mobilni telefoni</a>
+									<div class="harmonika2Slike" style="background-image: url(images/mobilni.png);top: 0px;"></div></li></div><hr/>
+								<div class="harmonika2Dirke"><li><a href="automobili.html">Automobili</a>
+									<div class="harmonika2Slike" style="background-image: url(images/auto.png);"></div></li></div><hr/>
+								<div class="harmonika2Dirke"><li><a href="nakit.html">Nakit</a>
+									<div class="harmonika2Slike" style="background-image: url(images/dijamant.png); top:-10px; height: 60px;"></div></li></div>
+							</ul>
+						</li>
+						</div><hr/>
+						<div class="harmonika1Dirke"><li><a href="LogIn.html"><p>LogIn</p></a></li></div><hr/>
+				</section>
+			</nav>
+		</sidebar>
+
+				<main class="sadrzaj" >
+				<div class="slikaFolder">
+
+				</div>
+<input type="file" placeholder="Upisi stanje artikla">
+				<ul class = "kreirajOglas">
+					<li><input type="text" placeholder="Upisi ime artikla"></li>
+					<li><input type="text" placeholder="Upisi Cenu artikla"></li>
+					<li><input type="text" placeholder="Upisi kolicinu artikla"></li>
+					<li><input type="text" placeholder="Upisi stanje artikla"></li>
+					<li><input type="submit" value="Kreiraj oglas"></li>
+				</ul>
+		</main>
+</body>
+</html>
