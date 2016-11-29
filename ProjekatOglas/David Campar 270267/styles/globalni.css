@@ -112,6 +112,23 @@ a{
 	color:#fff;
 }
 
+label{
+	color:#ccc;
+	display:block;
+	height: 50px;
+	padding: 10px;
+	font-size:0.8em;
+	-webkit-transition:0.2s;
+	transition:0.2s;	
+	cursor: pointer;
+	height: 55px;
+}
+
+label:hover{
+	background-color:#15171c;
+	color:#fff;
+}
+
 #navigacija li a.selektovano{
 	background-color: #020203;
 	color:#fff;
@@ -127,12 +144,14 @@ a{
 	width: 50px;
 	height:50px;
 	background-color: #5a6784;
-	margin-left: 215px;
+	margin-left: 82%;
 	color: #fff;
 	text-align: center;
 	font-size: 30px;
 	cursor: pointer;
-	margin-top: -50px;
+	margin-top: -34px;
+
+
 }
 
 .harmonika1Dirke{
@@ -181,7 +200,7 @@ a{
 	border-style: none;
 }
 
-#navigacijaOkviri .harmonika1 li:hover .navigacijaStrelice:after{
+#navigacijaOkviri .glavnaNavigacija li:hover .navigacijaStrelice:after{
 	display:block;
 	content:"\203A"; 
 	-webkit-transform: rotate(90deg);
@@ -190,19 +209,13 @@ a{
     padding-top: 5px;
 
 }
+
 .harmonika1{
 	border-top: 2px solid #5a6784;
 	border-bottom: 2px solid #5a6784;
 	border-right: 2px solid #5a6784;
 }
 
-				/*padajuci meni*/
-.harmonika1 .harmonika2{
-	display: none;
-}
-.harmonika1 li:hover .harmonika2{
-	display: block;
-}
 
 
 	/*MAIN*/
@@ -582,28 +595,38 @@ color:white;
 	margin-left: 330px;
 }
 
+
+.glavnaNavigacija{
+	position: relative;
+	border-top: 2px solid #5a6784;
+	border-bottom: 2px solid #5a6784;
+	border-right: 2px solid #5a6784;
+}
+
 .glavnaNavigacija input[type=checkbox] {
 	/* hide native checkbox */
 	position: absolute;
 	opacity: 0;
+
 }
 .glavnaNavigacija label, .glavnaNavigacija a {
 	position: relative;
 	display: block;
-	padding: 18px 18px 18px 64px;
-	background: #4d5158;
-	box-shadow: inset 0 -1px #555960;
-	color: #ffffff;
-	font-size: 1.6rem;
+
+	
 }
 
 .glavnaNavigacija ul {
 	/* by default hide all sub menus */
 	display: none;
+
 }
  
 .glavnaNavigacija input[type=checkbox]:checked + label + ul {
 	/* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
 	/* show children when item is checked */
 	display: block;
+}
+.has-children{
+
 }
