@@ -192,6 +192,7 @@ label:hover{
 }
 .navigacijaStrelice:after{
 	content:"\203A"; 
+
 }
 
 #navigacijaOkviri hr{
@@ -264,6 +265,7 @@ label:hover{
 }
 
 .slikaOglasa{
+	position: relative;
 	display: inline-block;
 	width: 134px;
 	height: 101px;
@@ -316,6 +318,7 @@ label:hover{
 }
 
 .dnoOglasa{
+	position: relative;
 	width:150px;
 	height: 20px;
 	background-color:#e8bc96;
@@ -495,13 +498,7 @@ color:white;
 
 }
 
-.slikaOtvorenogOglasa{
 
-	height: 400px;
-	width: 450px;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
 
 #oglasOtvoren{
 	margin-top: 10px;
@@ -525,6 +522,16 @@ color:white;
 	margin-left:30px;
 }
 
+
+.slikaOtvorenogOglasa{
+	position: relative;
+	height: 400px;
+	width: 450px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 10px;
+}
+
 .slikaStanjaDostave{
 	margin-top: -3px;	
 	margin-right: 135px;
@@ -537,16 +544,23 @@ color:white;
 }
 
 .sadrzajOtvorenogOglasa{
+	position: relative;
 	padding: 10px;
 	background-color: #fff;
 	padding-bottom: 30px;
 }
 
 .sadrzajOtvorenogOglasa p{
-	position: relative;
-	width: 550px;
-	height: 500px;
+
+	position: absolute;
+	width: 500px;
+	height: 400px;
 	overflow: hidden;
+
+	font-size: 1em;	
+	margin-left: 500px;
+	padding-right: 50px;
+
 	
 }
 
@@ -554,11 +568,6 @@ color:white;
 .sadrzaj h1 span{
 	font-size: 15px;
 }
-
-
-
-
-
 
 
 
@@ -591,9 +600,27 @@ color:white;
 }
 
 .kreirajOglas{
-	position: absolute;
-	margin-left: 330px;
+	position: relative;
+	margin-left: 30;
+	display:inline-block;
+	
+	
 }
+
+.slikaFolder{
+	float: left;
+	display: block;
+	position: relative;
+	width: 450px;
+	height: 450px;
+	border:2px solid black;	
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Antu_tag-folder.svg/1000px-Antu_tag-folder.svg.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+
 
 
 .glavnaNavigacija{
@@ -604,7 +631,6 @@ color:white;
 }
 
 .glavnaNavigacija input[type=checkbox] {
-	/* hide native checkbox */
 	position: absolute;
 	opacity: 0;
 
@@ -612,21 +638,19 @@ color:white;
 .glavnaNavigacija label, .glavnaNavigacija a {
 	position: relative;
 	display: block;
-
-	
 }
 
 .glavnaNavigacija ul {
-	/* by default hide all sub menus */
 	display: none;
-
 }
  
 .glavnaNavigacija input[type=checkbox]:checked + label + ul {
-	/* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
-	/* show children when item is checked */
 	display: block;
 }
-.has-children{
 
+
+.izmeniProfil{
+	width: 100px;
+	height: 50px;
+	margin-top: 20px;
 }

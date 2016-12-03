@@ -9,19 +9,23 @@
 		<div class="logo"><a href="index.html">Projekat<span>Prvi</span></a></div>
 	</header>
 		<sidebar id="bocniMeni">
-			<nav id="navigacija">
+			<nav id=navigacija>
 				<form>
 					<div class="slikaLupa"></div>
 						<div><input type="text" name="search"  placeholder="Pretraga" class="lupaTraganja"></div>
 						<button  class="dugmeKreiranja" formaction="kreirajOglas.html">Kreiraj svoj oglas</button>
 					<div class="slikaKreiraj"></div>
 				</form>
+				
 				<section id="navigacijaOkviri">
-					<ul class="harmonika1">	
+					<ul class="glavnaNavigacija">	
 						<div class="harmonika1Dirke"><li><a href="index.html">Početna</a></li></div><hr/>
-						<div class="harmonika1Dirke"><li><a href="#">Kategorije</a><div class="navigacijaStrelice"></div>
-							<ul class="harmonika2">
-								<div class="harmonika2Dirke"><hr/><li><a href="garderoba.html">Garderoba</a>
+						<div class="harmonika1Dirke"><li class="has-children">
+							<input type="checkbox" name ="group-1" id="group-1">
+							<label for="group-1">Kategorije<div class="navigacijaStrelice"></div></label>
+ 
+							<ul class="harmonika2"><hr/>
+								<div class="harmonika2Dirke"><li><a href="garderoba.html">Garderoba</a>
 									<div class="Harmonika2Slike" style="background-image: url(images/patike.png); top:0px;"></div></li><hr/></div><hr/>
 								<div class="harmonika2Dirke"><li><a href="mobilni-telefoni.html">Mobilni telefoni</a>
 									<div class="harmonika2Slike" style="background-image: url(images/mobilni.png);top: 0px;"></div></li></div><hr/>
@@ -32,8 +36,10 @@
 							</ul>
 						</li>
 						</div><hr/>
-						<div class="harmonika1Dirke"><li><a href="login.html"><p>LogIn</p></a></li></div><hr/>
+						<div class="harmonika1Dirke"><li><a href="login.html">LogIn</a></li></div>
+					</ul>
 				</section>
+				
 			</nav>
 		</sidebar>
 		<main class="sadrzaj" >
@@ -46,7 +52,7 @@
 				</ul>
 			</div>
 <!-- prvi --><div id="oglas">
-				<div class="vrhOglasa"><h3 class="naslovOglasa"><a href="oglasBroj1.html">Salomon Speed Cross 3 - NOVO 2016</a></h3>
+				<div class="vrhOglasa"><h3 class="naslovOglasa"><a href="oglasbroj1.html">Salomon Speed Cross 3 - NOVO 2016</a></h3>
 					</div>
 							<div class="sadrzajOglasa">
 								<div class="slikaOglasa" style="background-image: url(http://www.njuskalo.hr/image-bigger/sportska-oprema-ostalo/salomon-tenisice-speedcross-3-slika-38917146.jpg);">
@@ -81,7 +87,7 @@
 									<p>Muške NIKE jakne-zimske Sve veličine Više boja</p>
 							</div>
 				</div><div class="dnoOglasa">Cena: 1200din</div>
-			<div class="
+			<div class="">
 			<div class="Stranice"> 
 				<ul class="IzaberiStranicu">
   					<li><a href="#">«</a></li>

@@ -16,12 +16,16 @@
 						<button  class="dugmeKreiranja" formaction="kreirajOglas.html">Kreiraj svoj oglas</button>
 					<div class="slikaKreiraj"></div>
 				</form>
+				
 				<section id="navigacijaOkviri">
-					<ul class="harmonika1">	
+					<ul class="glavnaNavigacija">	
 						<div class="harmonika1Dirke"><li><a href="index.html">Početna</a></li></div><hr/>
-						<div class="harmonika1Dirke"><li><a href="#">Kategorije</a><div class="navigacijaStrelice"></div>
-							<ul class="harmonika2">
-								<div class="harmonika2Dirke"><hr/><li><a href="garderoba.html">Garderoba</a>
+						<div class="harmonika1Dirke"><li class="has-children">
+							<input type="checkbox" name ="group-1" id="group-1">
+							<label for="group-1">Kategorije<div class="navigacijaStrelice"></div></label>
+ 
+							<ul class="harmonika2"><hr/>
+								<div class="harmonika2Dirke"><li><a href="garderoba.html">Garderoba</a>
 									<div class="Harmonika2Slike" style="background-image: url(images/patike.png); top:0px;"></div></li><hr/></div><hr/>
 								<div class="harmonika2Dirke"><li><a href="mobilni-telefoni.html">Mobilni telefoni</a>
 									<div class="harmonika2Slike" style="background-image: url(images/mobilni.png);top: 0px;"></div></li></div><hr/>
@@ -32,8 +36,10 @@
 							</ul>
 						</li>
 						</div><hr/>
-						<div class="harmonika1Dirke"><li><a href="login.html"><p>LogIn</p></a></li></div><hr/>
+						<div class="harmonika1Dirke"><li><a href="login.html">LogIn</a></li></div>
+					</ul>
 				</section>
+				
 			</nav>
 		</sidebar>
 	<main class="sadrzaj" >
